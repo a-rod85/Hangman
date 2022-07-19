@@ -50,16 +50,18 @@ def run_game():
             end_game()
             break
 
-        else:
+    else:
         print("Invalid input, please decided 'Y' or 'N'")
+
 
 def end_game():
     """
     Game Ends
     """
     print("Thanks for playing, see you next time!")
-    
-    exit()            
+
+    exit()
+
 
 def play_game():
     """
@@ -89,7 +91,7 @@ def play_game():
         else:
                 turns -= 1
                 print(f"{guess} is not in the secret word")
-    elif: guess in guessed_letters:
+    elif guess in guessed_letters:
         print(f"You already tried {guess} try again")
     else:
         print(f"{guess} is not a valid guess, please choose one letter")
@@ -108,8 +110,10 @@ def play_game():
         print(f" Congratulations! The secret word was {word}")
         run_game()
 
+
 def stages_for_hanging(turns):
-    stages = [ # Final stage: head, torso, both arms, and both legs
+
+    stages = [
                 """
                    --------
                    |      |
@@ -186,4 +190,3 @@ def stages_for_hanging(turns):
 name()
 run_game()
 play_game()
-
