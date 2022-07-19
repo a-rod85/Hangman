@@ -10,12 +10,17 @@ print(
     """
     )
 
+
 def get_valid_word(words):
+    """
+    Generate valid random words
+    """
     word = random.choice(words)
-    while "-" in word or " " in word: 
+    while "-" in word or " " in word:
         word = random.choice(words)
 
         return word.upper()
+
 
 def name():
     """
@@ -27,10 +32,10 @@ def name():
     if name.isalpha():
         print(f"Best of luck {name}!")
         run_game()
-        
 
-    else:
+else:
             print("Not a valid name, please try again")
+
 
 def run_game():
 
@@ -38,15 +43,15 @@ def run_game():
         print("Do you want to play??")
         run_game = input("Press 'Y' yes and 'N' for no\n").upper()
 
-        if  run_game == "Y":
+    if run_game == "Y":
             play_game()
             break
-        elif run_game == "N":
+    elif run_game == "N":
             end_game()
             break
-        
+
         else:
-            print("Invalid input, please decided 'Y' or 'N'")
+        print("Invalid input, please decided 'Y' or 'N'")
 
 def end_game():
     """
@@ -59,7 +64,7 @@ def end_game():
 def play_game():
     """
     Runs the game, a random word is chosen and the
-     player guesses which letters are in the word
+    player guesses which letters are in the word
     """
     alpha = set(string.ascii_uppercase)
     word = get_valid_word(words)
@@ -104,7 +109,7 @@ def play_game():
         run_game()
 
 def stages_for_hanging(turns):
-    stages = [  # Final stage: head, torso, both arms, and both legs
+    stages = [ # Final stage: head, torso, both arms, and both legs
                 """
                    --------
                    |      |
@@ -182,7 +187,3 @@ name()
 run_game()
 play_game()
 
-
-
-
-       
