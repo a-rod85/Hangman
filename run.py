@@ -27,7 +27,7 @@ def name():
     if name.isalpha():
         print(f"Best of luck {name}!")
         run_game()
-        break
+        
 
     else:
             print("Not a valid name, please try again")
