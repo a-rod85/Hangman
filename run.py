@@ -48,6 +48,16 @@ def run_game():
         else:
             print("Invalid input, please decided 'Y' or 'N'")
 
+def end_game():
+    """
+    Game Ends
+    """
+    print("Thanks for playing, see you next time!")
+    
+    exit()            
+
+    
+
 
 
 
