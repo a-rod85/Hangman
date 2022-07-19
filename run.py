@@ -104,6 +104,79 @@ def play_game():
         print(f" Congratulations! The secret word was {word}")
         run_game()
 
+def stages_for_hanging(turns):
+    stages = [  # Final stage: head, torso, both arms, and both legs
+                """
+                   --------
+                   |      |
+                   |      O
+                   |     \|/
+                   |      |
+                   |     / \
+                   -
+                """,
+                # Head, torso, both arms, and one leg
+                """
+                   --------
+                   |      |
+                   |      O
+                   |     \|/
+                   |      |
+                   |     /
+                   -
+                """,
+                # Head, torso, and both arms
+                """
+                   --------
+                   |      |
+                   |      O
+                   |     \|/
+                   |      |
+                   |
+                   -
+                """,
+                # Head, torso, and one arm
+                """
+                   --------
+                   |      |
+                   |      O
+                   |     \|
+                   |      |
+                   |
+                   -
+                """,
+                # Head and torso
+                """
+                   --------
+                   |      |
+                   |      O
+                   |      |
+                   |      |
+                   |
+                   -
+                """,
+                # Head
+                """
+                   --------
+                   |      |
+                   |      O
+                   |
+                   |
+                   |
+                   -
+                """,
+                # Initial empty state
+                """
+                   --------
+                   |      |
+                   |
+                   |
+                   |
+                   |
+                   -
+                """
+    ]
+
 
 
 
