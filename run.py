@@ -56,7 +56,54 @@ def end_game():
     
     exit()            
 
-    
+def play_game():
+    """
+    Runs the game, a random word is chosen and the
+     player guesses which letters are in the word
+    """
+    alpha = set(string.ascii_uppercase)
+    word = get_valid_word(words)
+    letters_word = set(word)
+    secret_word = " _ " * len(word)
+    guessed_letters = set()
+    turns = 6
+    print("Let's start!")
+    print(f"Turns left: {turns}")
+    print(secret_word)
+    while len(letters_word) and turns > 0:
+        print(" Guessed letters: ", " ".join(guessed_letters))
+        print(f"Turns left: {turns}")
+        print(stages_for_hanging(turns))
+        guess = input("Pick a letter: \n").upper()
+
+        if guess in alpha - guessed_letters:
+            guessed_letters.add(guess)
+            if guess in letters_word:
+                letters_word.remove(guess)
+                print("" "Well done!")
+        else:
+                turns -= 1
+                print(f"{guess} is not in the secret word")
+            
+    elif guess in guessed_letters:
+    print(f"You already tried {guess} try again")
+    else:
+    print(f"{guess} is not a valid guess, please choose one letter")
+
+    for letter in word:
+            if letter in guessed_letters:
+                print(letter, end="")
+            else:
+                print(" _ ", end="")
+
+    if turns == 0:
+        print(stages_for_hanging(turns))
+        print(f" Sorry you lost, the secret word was {word}")
+        run_game()
+    else:
+        print(f" Congratulations! The secret word was {word}")
+        run_game()
+
 
 
 
