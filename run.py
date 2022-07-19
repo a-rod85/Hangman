@@ -32,4 +32,23 @@ def name():
     else:
             print("Not a valid name, please try again")
 
+def run_game():
+
+    while True:
+        print("Do you want to play??")
+        run_game = input("Press 'Y' yes and 'N' for no\n").upper()
+
+        if  run_game == "Y":
+            play_game()
+            break
+        elif run_game == "N":
+            end_game()
+            break
+        
+        else:
+            print("Invalid input, please decided 'Y' or 'N'")
+
+
+
+
        
