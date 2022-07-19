@@ -28,7 +28,7 @@ def name():
         print(f"Best of luck {name}!")
         run_game()
         break
-       
+
     else:
             print("Not a valid name, please try again")
 
@@ -84,11 +84,10 @@ def play_game():
         else:
                 turns -= 1
                 print(f"{guess} is not in the secret word")
-            
-    elif guess in guessed_letters:
-    print(f"You already tried {guess} try again")
+    elif: guess in guessed_letters:
+        print(f"You already tried {guess} try again")
     else:
-    print(f"{guess} is not a valid guess, please choose one letter")
+        print(f"{guess} is not a valid guess, please choose one letter")
 
     for letter in word:
             if letter in guessed_letters:
