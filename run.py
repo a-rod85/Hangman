@@ -177,6 +177,11 @@ def stages_for_hanging(turns):
                 """
     ]
 
+    return stages[turns]
+
+name()
+run_game()
+play_game()
 
 
 
