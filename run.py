@@ -10,5 +10,4 @@ def get_valid_word(words):
 
         return word.upper
 
-        name = input ("What's your name?\n")
-        print(f"All the best"{name}!)
+       
