@@ -1,4 +1,4 @@
-word_list = [
+words = [
 'industrious',
 'poor',
 'fan',

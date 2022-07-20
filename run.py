@@ -1,4 +1,5 @@
 import random
+import string
 from words import words
 
 print(
@@ -32,6 +33,7 @@ def name():
     if name.isalpha():
         print(f"Best of luck {name}!")
         run_game()
+        breakpoint()
 
     else:
             print("Not a valid name, please try again")
@@ -45,11 +47,10 @@ def run_game():
 
     if run_game == "Y":
             play_game()
-            break
-    
+
     elif run_game == "N":
             end_game()
-            break
+
 
     else:
         print("Invalid input, please decided 'Y' or 'N'")
@@ -90,12 +91,12 @@ def play_game():
                 letters_word.remove(guess)
                 print("" "Well done!")
         else:
-                turns -= 1
-                print(f"{guess} is not in the secret word")
+            turns = 1
+            print(f"{guess} is not in the secret word")
     elif guess in guessed_letters:
-        print(f"You already tried {guess} try again")
-    else:
-        print(f"{guess} is not a valid guess, please choose one letter")
+    print (f"You already tried {guess} try again")
+        else:
+        print (f"{guess} is not a valid guess, please choose one letter")
 
     for letter in word:
             if letter in guessed_letters:
