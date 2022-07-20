@@ -104,10 +104,10 @@ def play_game():
 
     if turns == 0:
         print(stages_for_hanging(turns))
-        print(f" Unlucky you lost, the secret word was {word}")
+        print(f" Sorry you lost, the secret word was {word}")
         run_game()
     else:
-        print(f" You done it!! The secret word was {word}")
+        print(f" Congratulations! The secret word was {word}")
         run_game()
 
 
