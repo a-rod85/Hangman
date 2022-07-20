@@ -9,7 +9,7 @@ print(
     then you have 6 turns to guess which word
     is lurking in the wilderness!
     """
-    )
+)
 
 
 def get_valid_word(words):
@@ -36,7 +36,7 @@ def name():
         breakpoint()
 
     else:
-            print("Not a valid name, please try again")
+        print("Not a valid name, please try again")
 
 
 def run_game():
@@ -46,11 +46,10 @@ def run_game():
         run_game = input("Press 'Y' yes and 'N' for no\n").upper()
 
     if run_game == "Y":
-            play_game()
+        play_game()
 
     elif run_game == "N":
-            end_game()
-
+        end_game()
 
     else:
         print("Invalid input, please decided 'Y' or 'N'")
@@ -85,24 +84,22 @@ def play_game():
         print(stages_for_hanging(turns))
         guess = input("Pick a letter: \n").upper()
 
-        if guess in alpha - guessed_letters:
+    if guess in alpha - guessed_letters:
             guessed_letters.add(guess)
             if guess in letters_word:
                 letters_word.remove(guess)
                 print("" "Well done!")
-        else:
-            turns = 1
-            print(f"{guess} is not in the secret word")
-    elif guess in guessed_letters:
-    print (f"You already tried {guess} try again")
-        else:
-        print (f"{guess} is not a valid guess, please choose one letter")
+            else:
+                turns = 1
+                print(f"{guess} is not in the secret word")
+    else:
+        print(f"{guess} is not a valid guess, please choose one letter")
 
     for letter in word:
-            if letter in guessed_letters:
-                print(letter, end="")
-            else:
-                print(" _ ", end="")
+        if letter in guessed_letters:
+            print(letter, end="")
+        else:
+            print(" _ ", end="")
 
     if turns == 0:
         print(stages_for_hanging(turns))
@@ -116,7 +113,7 @@ def play_game():
 def stages_for_hanging(turns):
 
     stages = [
-                """
+        """
                    --------
                    |      |
                    |      O
@@ -125,8 +122,8 @@ def stages_for_hanging(turns):
                    |     / \
                    -
                 """,
-                # Head, torso, both arms, and one leg
-                """
+        # Head, torso, both arms, and one leg
+        """
                    --------
                    |      |
                    |      O
@@ -135,8 +132,8 @@ def stages_for_hanging(turns):
                    |     /
                    -
                 """,
-                # Head, torso, and both arms
-                """
+        # Head, torso, and both arms
+        """
                    --------
                    |      |
                    |      O
@@ -145,8 +142,8 @@ def stages_for_hanging(turns):
                    |
                    -
                 """,
-                # Head, torso, and one arm
-                """
+        # Head, torso, and one arm
+        """
                    --------
                    |      |
                    |      O
@@ -155,8 +152,8 @@ def stages_for_hanging(turns):
                    |
                    -
                 """,
-                # Head and torso
-                """
+        # Head and torso
+        """
                    --------
                    |      |
                    |      O
@@ -165,8 +162,8 @@ def stages_for_hanging(turns):
                    |
                    -
                 """,
-                # Head
-                """
+        # Head
+        """
                    --------
                    |      |
                    |      O
@@ -175,8 +172,8 @@ def stages_for_hanging(turns):
                    |
                    -
                 """,
-                # Initial empty state
-                """
+        # Initial empty state
+        """
                    --------
                    |      |
                    |
@@ -188,6 +185,7 @@ def stages_for_hanging(turns):
     ]
 
     return stages[turns]
+
 
 name()
 run_game()
