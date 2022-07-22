@@ -195,11 +195,6 @@ Solution:
 
 To make it clear how many letters the secret word contains I added blanks between each underscore: " _ ".
 
-Test 2: Ran game again to get computer to choose random word.
-
-Result 2: The blanks make it easy to see how many letters are in the secret word.
-
-Verdict 2: The secret word function runs as intented, presenting new random words, without blanks or hyphens, and the number of letters are also clearly displayed.
 
 Correct Letter
 
