@@ -135,7 +135,9 @@ Below you will see how I tested:
 
 Enter Username
 
-Expected Outcomes: When entering the game the player is asked to enter their name. A valid name contains only letters and is required for the player to continue.
+Expected Outcomes: 
+
+When entering the game the player is asked to enter their name. A valid name contains only letters and is required for the player to continue.
 
 Test: 
 
@@ -167,7 +169,9 @@ Result:
 
 Correct inputs progressed the code correctly and incorrect inputs displayed a message prompting the player for the right input.
 
-Verdict: Code functioned as intented and did not break at any stage.
+Verdict: 
+
+Code functioned as intented and did not break at any stage.
 
 The Secret Word
 
@@ -203,11 +207,17 @@ Expected Outcomes:
 
 Once the game is running, the player is presented with the secret word to guess. From start the player can see how many letters are in the secret word. If the guessed letter is in the secret word, the underscore in the word is supposed to be replaced by the correct letter. Each valid guess is to be displayed in a guessed letters list.
 
-Test: Correct inputs; letters, and incorrect inputs; digits, blanks, other signs, were entered to test this function.
+Test: 
 
-Result: Correct guesses reveal the letter in the secret word and is also added in the guessed letters list.
+Correct inputs; letters, and incorrect inputs; digits, blanks, other signs, were entered to test this function.
 
-Verdict: The correct letter guesses work as intended.
+Result: 
+
+Correct guesses reveal the letter in the secret word and is also added in the guessed letters list.
+
+Verdict: 
+
+The correct letter guesses work as intended.
 
 Wrong Letter
 
@@ -226,6 +236,7 @@ Wrong guesses are added in the guessed letters list, numbers of turns are decrea
 Verdict: The wrong letter guesses work as intended.
 
 Invalid Guess
+
 Expected Outcomes:
 
 If the player inputs an invalid guess, i.e digits, blanks, other signs or a letter that has already been guessed, an error is supposed to be shown, encouraging the player to make another guess.
@@ -250,7 +261,7 @@ If the player makes 6 valid guesses and still not manages to guess the secret wo
 
 Test:
 
-Unsuccessful attempts at guessing the secret word were made.
+Unsuccessful attempts by the player at guessing the secret word were made.
 
 Result: 
 
@@ -269,15 +280,32 @@ Player wins
 
 Expected Outcomes: 
 
-If the player manages to guess the secret word using no more than 6 guesses, the player wins! The secret word is displayed and the player is asked if they want to play again.
+If the player manages to guess the secret word using no more than 6 guesses, the player wins! The secret word is displayed and the player is asked if they want to play again. they do so by entering Y or N.
 
-Test: Successful attempts at guessing the secret word were made.
+Test: 
 
-Result: A message telling the player they won apperars, and the secret word is displayed. The player is not asked if they wish to play again or not.
+Successful attempts at guessing the secret word were made.
 
-Verdict: The player loses function doesn't work as intented since the player is not asked if they want to play again.
+Result: 
 
-Solution: Add the run_game function to the else statement in the play_game function.
+A message telling the player they won apperars, and the secret word is displayed. The player is not asked if they wish to play again or not.
+
+Verdict: 
+
+The player loses function doesn't work as intented since the player is not asked if they want to play again.
+
+Solution: 
+
+Add the run_game function to the else statement in the play_game function.
+
+
+## Validation:
+
+
+![Skärmbild (31)](https://user-images.githubusercontent.com/102023928/180496360-6c5ba1d9-24dd-46a2-907d-df0053ee01a2.png)
+
+
+The python code was run through Pep8 Online to check to make sure there are no errors in the code.
 
 
 ## Credits
