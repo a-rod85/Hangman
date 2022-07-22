@@ -114,10 +114,10 @@ The page was deployed using Heroku. The procedure to do this was:
 1.  Use GitHub to build project.
 2.  Push built project code to GitHub.
 3.  Navigate to Heroku
-4.  Login or signup to the site.
+4.  Signup and Login to the site.
 5.  Select create a new app, select a unique name and region.
 6.  Select Buildpack, select Python and save.
-7.  Select Buildpacks again and select Nodejs and save again.
+7.  Select Buildpacks again and select Nodejs save.
 8.  Ensure order of Buildpacks is Python then Nodejs.
 9.  Navigate to the deploy tab, choose GitHub as deployment method and connect to you GitHub account.
 10. Enter your repository and connect.
