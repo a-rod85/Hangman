@@ -288,11 +288,11 @@ Successful attempts at guessing the secret word were made.
 
 Result: 
 
-A message telling the player they won apperars, and the secret word is displayed. The player is not asked if they wish to play again or not.
+A message telling the player that they have  won apperars and the secret word is displayed. The player is not asked if they wish to play again.
 
 Verdict: 
 
-The player loses function doesn't work as intented since the player is not asked if they want to play again.
+The player loses function doesn't work as intented since the player is not asked if they wants to play again.
 
 Solution: 
 
